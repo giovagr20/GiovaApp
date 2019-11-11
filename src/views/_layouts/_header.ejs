@@ -8,21 +8,48 @@
         href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
-   crossorigin="anonymous">
+   crossorigin="anonymous"> 
 
     <title>Card Giova</title>
 </head>
 <body>   
-        <nav class="navbar navbar-dark bg-info">        
-            <a class="navbar-brand" href="/">
-                <img class="image" src="https://i.ibb.co/nwhkdsS/Logo-Giova.png" alt="Logo-Giova"
-                     style="height: 50px; width: 50px; border-radius: 10px;">
-            Menu</a>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-info">
+                <div class="dropdown mx-auto d-block">
+                        <a href="/" class="navbar-brand"><img src="https://i.ibb.co/SmFGkf5/Logo-Giovanni.png" 
+                        class="rounded bg-info mx-auto d-block" alt="Logo-Giovanni"></a>  
+                        <a class="btn btn-info dropdown-toggle mx-auto d-block" 
+                        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"
+                        id="dropdownMenuLink">
+                          <b>Menu</b>
+                        </a>
+                        <div class="dropdown-menu mx-auto d-block" x-placement="bottom-start" 
+                        aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item mx-auto d-block" href="#"><i class="fas fa-image"></i> Photo</a>
+                          <a class="dropdown-item mx-auto d-block" href="#"><i class="fas fa-at"></i> About me</a>
+                          <a class="dropdown-item mx-auto d-block" href="#"><i class="fas fa-plus"></i> Experience</a>
+                          <a class="dropdown-item mx-auto d-block" href="#"><i class="far fa-comment-dots"></i> Contact</a>
+                        </div>
+                </div>               
         </nav>
-        <div class="jumbotron">
-                
+
+        <div class="jumbotron mt-2">
+                <section>
+                    <div class="card border-info">
+                        <div class="card-header bg-info">
+                            <h1 class="card-title"><b>About me</b></h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quis nesciunt, illo dolores 
+                                quia porro consectetur accusamus omnis dignissimos itaque aliquid molestias vitae incidunt a 
+                                tenetur dolorum id fuga dolore.
+                            </p>
+                        </div>
+                    </div>
+                </section>
         </div>
-        
+    </div>
     
 </body>
 </html>
