@@ -1,0 +1,29 @@
+{
+  "name": "giovaapp",
+  "version": "1.0.0",
+  "description": "About me",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giovagr20/GiovaApp.git"
+  },
+  "author": "Giovanni Gómez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giovagr20/GiovaApp/issues"
+  },
+  "homepage": "https://github.com/giovagr20/GiovaApp#readme"
+}
