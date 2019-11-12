@@ -1,46 +1,60 @@
-<%include _layouts/_header%>
+<% include _layouts/_header %>
 
 <div class="card">
-        <ul class="nav nav-pills mx-auto d-block">
-                <li class="nav-item dropdown show">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-                   href="#" role="button" aria-haspopup="true" aria-expanded="true"> 
-                   <i class="fas fa-ellipsis-v"></i> Menu</a>
-                  <div class="dropdown-menu show" x-placement="bottom-start" 
-                  style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
-                  <a class="dropdown-item" href="#basicinfo"><i class="fas fa-image"></i> Profile</a>                  
-                    <a class="dropdown-item" href="#"><i class="fas fa-at"></i> About me</a>
-                    <a class="dropdown-item" href="#experience"><i class="fas fa-plus"></i> Experience</a>
-                    <a class="dropdown-item" href="#"><i class="far fa-comment-dots"></i> Contact</a>
-              </ul>
+    <ul class="nav nav-pills mx-auto d-block">
+        <li class="nav-item dropdown show">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="true">
+                <i class="fas fa-ellipsis-v"></i> Menu</a>
+            <div class="dropdown-menu show" x-placement="bottom-start"
+                style="position: absolute; transform: translate3d(0px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a class="dropdown-item" href="#basicinfo"><i class="fas fa-image"></i> Profile</a>
+                <a class="dropdown-item" href="#aboutme"><i class="fas fa-at"></i> About me</a>
+                <a class="dropdown-item" href="#experience"><i class="fas fa-plus"></i> Experience</a>
+                <a class="dropdown-item" href="#"><i class="far fa-comment-dots"></i> Contact</a>
+    </ul>
 </div>
+
 <section>
-            <div class="card mx-auto d-block mt-2 border-info" style="width: 20rem;">
-                    <img src="https://i.ibb.co/SmLNkcY/GIOVANNI-IMAGE.jpg" alt="GIOVANNI-IMAGE" 
-                    class="card-img-top">
-                <div class="card-boy">
-                    <h1 class="card-title" style="color: #17a2b8; text-align: center;">
-                            <b> Hi, I'm Giovanni Gomez Restrepo</b>
-                    </h1>
-                    <hr>
-                    <p class="card-text" style="text-align: center;">
-                    <ul>
-                       <li class="lead"> <i class="fas fa-plus"></i> <b> Age: </b>23 </li>
-                       <li class="lead"> <i class="fas fa-user-graduate"></i><b> Major: </b> Engineer Systems </li>
-                       <li class="lead"> <i class="fas fa-flag"></i><b> Country: </b> Colombia </li>
-                       <li class="lead"> <i class="fas fa-building"></i><b> City: </b> Medellin <br> </li>
-                       <li class="lead"> <i class="fas fa-phone"></i> <b> Phone: </b> (+57) 314 7392212 </li>
-                       <li class="lead"> <i class="fas fa-envelope"></i> <b> Email: </b> giovannyg32@gmail.com </li>
-                    </ul>
-                    </p>
-                </div>               
+    <div id="basicinfo" class="card mx-auto d-block mt-2 border-info" style="width: 22rem;">
+        <img src="https://i.ibb.co/SmLNkcY/GIOVANNI-IMAGE.jpg" alt="GIOVANNI-IMAGE" class="card-img-top">
+        <div class="card-body">
+            <h1 class="card-title" style="color: #17a2b8; text-align: center;">
+                <b> Hi, i'm Giovanni Gomez Restrepo</b>
+            </h1>
+            <hr>
+            <p class="card-text" style="text-align: left;">
+                <ul>
+                    <li class="lead"> <i class="fas fa-plus"></i> <b> Age: </b>23 </li>
+                    <li class="lead"> <i class="fas fa-user-graduate"></i><b> Major: </b> Engineer Systems </li>
+                    <li class="lead"> <i class="fas fa-flag"></i><b> Country: </b> Colombia </li>
+                    <li class="lead"> <i class="fas fa-building"></i><b> City: </b> Medellin <br> </li>
+                    <li class="lead"> <i class="fas fa-phone"></i> <b> Phone: </b> (+57) 314 7392212 </li>
+                    <li class="lead"> <i class="fas fa-envelope"></i> <b> Email: </b> giovannyg32@gmail.com </li>
+                </ul>
+            </p>
         </div>
-    
+        <div class="card-footer">
+            <h1 class="card-title" style="color: #17a2b8; text-align: center;">
+                <b> My skills</b></h1>
+            <h5 class="card-text"><b>Angular</b></h5>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+            </div>
+            <h5 class="card-text"><b>NodeJS</b></h5>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <section>
-    <div class="jumbotron mt-2 border-info">
+    <div id="aboutme" class="jumbotron mt-2 border-info">
 
-        <div class="card border-info">
+        <div class="card mx-auto d-block">
             <div class="card-header bg-info">
                 <h1 class="card-title d-block"><i class="fas fa-at"></i><b> About me</b></h1>
             </div>
@@ -52,35 +66,42 @@
                 </p>
             </div>
         </div>
+
     </div>
 </section>
-<section>
+
+<div class="card mx-auto d-block">
+    <div class="card-header mx-auto d-block bg-info">
+        <h1 class="card-title d-block"><i class="fas fa-plus"></i><b> Experience</b></h1>
+    </div>
+    <div class="card-body mx-auto d-block">
         <table id="experience" class="table table-bordered mt-2 border-dark">
-                <thead class="table-info">
-                  <tr>
-                    <th scope="col" class="lead"> <b> Company</b></th>
+            <thead class="table-danger">
+                <tr>
+                    <th scope="col" class="lead"><b> Company</b></th>
                     <th scope="col" class="lead"><b> Job</b></th>
                     <th scope="col" class="lead"><b> Years</b></th>
-                    <th scope="col" class="lead"><b> Technologies</b></th>
-                  </tr>
-                </thead>
-                <tbody class="table-light">
-                    <tr>
-                        <th scope="row" class="lead">EPS Sura</td>
-                        <th scope="row" class="lead">Developer analyst</td>
-                        <th scope="row" class="lead">+2</td>
-                        <th scope="row" class="lead">Here, images of Technologies</td>
-                    </tr>
-                    <tr>
-                            <th scope="row" class="lead">Sophos Solutions</td>
-                            <th scope="row" class="lead">Testing analyst</td>
-                            <th scope="row" class="lead">+1</td>
-                            <th scope="row" class="lead">Here, images of Technologies</td>
-                        </tr>
-
-                </tbody>
-                </table>
-    
+                    <th scope="col" class="lead"><b> Tech</b></th>
+                </tr>
+            </thead>
+            <tbody class="table-light">
+                <tr>
+                    <th scope="row" class="lead"> EPS Sura</td>
+                    <th scope="row" class="lead"> Developer Analyst</td>
+                    <th scope="row" class="lead"> 2 +</td>
+                    <th scope="row" class="lead"> IMAGES</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="lead"> Sophos Solutions</td>
+                    <th scope="row" class="lead"> Testing Analyst</td>
+                    <th scope="row" class="lead"> 1+</td>
+                    <th scope="row" class="lead"> IAMGES</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </section>
+
 
 </div>
