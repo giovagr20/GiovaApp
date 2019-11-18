@@ -11,7 +11,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/es', require('./routes/routes.menu'));
+
+app.use('/', require('./routes/routes.menu'));
 
 app.listen(app.get('port'), ()=>{
     console.log(`Server run on port ${app.get('port')}`);
