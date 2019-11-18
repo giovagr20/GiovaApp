@@ -1,3 +1,8 @@
 .section-experience{
-    background: linear-gradient(rgba(0, 120, 255, 1),rgba(255, 255, 255, 0.2)), url('../img/CodeIcon.jpg');
+    background: linear-gradient(rgba(0, 120, 255, 1),rgba(255, 255, 255, 0.2)),
+     url('../img/CodeIcon.jpg');
+}
+
+body{
+    background: #f5f5ff;
 }
