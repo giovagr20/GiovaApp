@@ -1,5 +1,5 @@
 .section-experience{
-    background: linear-gradient(rgba(0, 120, 255, 1),rgba(255, 255, 255, 0.2)),
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 120, 255, 1)),
      url('../img/CodeIcon.jpg');
 }
 
@@ -9,4 +9,10 @@ body{
 
 .back-color{
     background-color: #0078ff;
+    position: flex;
+    display: block;
+}
+
+.section-service{
+    background: linear-gradient(rgba(0, 120, 255, 1),rgba(255, 255, 255, 0))
 }
