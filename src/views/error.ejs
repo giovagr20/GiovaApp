@@ -1,16 +1,40 @@
-<div class="container-fluid">
-    <div class="">
-        <div class="row justify-content-center">
-            <div class="col mb-2">
-                <a class="btn btn-light" href="/">
-                    <img src="./img/iconfinder_36-404_error_4620096.svg" alt="Error 404">
-                </a>
-            </div>
-            <div class="col mb-2">
-                <h1 class="">
-                    Error 404 not found
-                </h1>
-            </div>
-        </div>
+<% include _layouts/_header %>
+
+<div class="navbar-collapse collapse" id="navbarCollapse" style="">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#"><i class="fas fa-at"></i> Acerca de mi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#"><i class="fas fa-plus"></i> Experiencia</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#"><i class="fas fa-cogs"></i> Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="#"><i class="far fa-comment-dots"></i> Contactame</a>
+        </li>
+    </ul>
+    <form class="form-inline mt-2 mt-md-0">
+        <a class="form-control mr-sm-2 text-dark" href="/en">
+            <img src="./img/iconfinder_england_5320698.svg" alt="Translate"> Inglés
+        </a>
+    </form>
+</div>
+</nav>
+<div class="jumbotron mt-3">
+    <div class="mt-5">
+        <img src="./img/iconfinder_36-404_error_4620096.svg" alt="Error 404">
+        <h1 class="display-3">Error 404 not found</h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis, rem numquam omnis asperiores ipsum debitis!
+            Minima accusamus harum ducimus quibusdam in quas itaque,
+            et recusandae cum error non mollitia ab.
+        </p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Go back!</a>
+        </p>
     </div>
 </div>
