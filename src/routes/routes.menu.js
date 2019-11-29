@@ -7,6 +7,11 @@ router.get('/en', (req, res)=>{
 
 router.get('/', (req,res)=>{
     res.render('menu_spanish');
+});
+
+router.get('*', (req,res, next)=>{
+    res.render('error');
+    next(err);
 })
 
 
