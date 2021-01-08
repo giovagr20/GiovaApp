@@ -1,31 +1,30 @@
-
 <% include _layouts/_header %>
-<div class="navbar-collapse collapse" id="navbarCollapse" style="">
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-            <a class="nav-link text-light" href="#aboutme"><i class="fas fa-at"></i> Acerca de mi</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-light" href="#"><i class="fas fa-plus"></i> Experiencia</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-light" href="#"><i class="fas fa-cogs"></i> Servicios</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-light" href="#"><i class="far fa-comment-dots"></i> Contactame</a>
-        </li>
+<div class="navbar-collapse collapse" id="navbarCollapse"">
+    <ul class=" navbar-nav mr-auto">
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#aboutme"><i class="fas fa-at"></i> Acerca de mi</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#experience"><i class="fas fa-plus"></i> Experiencia</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#service"><i class="fas fa-cogs"></i> Servicios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light" href="#contactme"><i class="far fa-comment-dots"></i> Contactame</a>
+    </li>
     </ul>
     <form class="form-inline mt-2 mt-md-0">
-        <a class="form-control mr-sm-2 text-dark" href="/en">
+        <a class="form-control mr-sm-2 text-dark" href="/">
             <img src="./img/iconfinder_england_5320698.svg" alt="Translate"> Inglés
         </a>
     </form>
 </div>
 </nav>
-<div class="jumbotron mt-5 bg-light" id="aboutme">
+<div class="jumbotron mt-5 bg-secondary" id="aboutme">
     <div class="card mt-auto">
-        <div class="content">
-            <h1 class="text-center text-dark font-italic">Acerca de mi</h1>
+        <div class="content mt-2 bg-dark">
+            <h1 class="text-center text-light font-italic">Acerca de mi</h1>
             <hr>
         </div>
         <div class="card-body">
@@ -70,6 +69,11 @@
                                         <i class="fab fa-github"></i>
                                     </a>
                                 </div>
+                                <div class="col-sm-2 text-center">
+                                    <a target="blank" href="#" class="rounded-circle btn btn-outline-dark">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
                             </div>
                         </ol>
                     </ul>
@@ -80,64 +84,185 @@
                         <hr>
                     </div>
                     <div class="progress mt-2" style="height: auto;">
-                            <a target="blank" href="https://nodejs.org/en/" class="btn btn-dark">
-                                <img src="./img/iconfinder_233_Node_Js_logo_4375017.svg"
-                                    class="img-fluid max-width: 100%; height: auto" alt="NodeJS">
-                            </a>
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 60%">
-                            </div>
+                        <a target="blank" href="https://nodejs.org/en/" class="btn btn-dark">
+                            <img src="./img/iconfinder_233_Node_Js_logo_4375017.svg"
+                                class="img-fluid max-width: 100%; height: auto" alt="NodeJS">
+                        </a>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 60%">
                         </div>
-                        <div class="progress mt-2" style="height: auto;">
-                            <a href="https://angular.io/start" target="blank" class="btn btn-dark">
-                                <img src="./img/iconfinder_21_Angular_logo_logos_4373284.svg"
-                                    class="img-fluid max-width: 100%; height: auto" alt="Angular">
-                            </a>
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
-                                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 47%">
-                            </div>
+                    </div>
+                    <div class="progress mt-2" style="height: auto;">
+                        <a href="https://angular.io/start" target="blank" class="btn btn-dark">
+                            <img src="./img/iconfinder_21_Angular_logo_logos_4373284.svg"
+                                class="img-fluid max-width: 100%; height: auto" alt="Angular">
+                        </a>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 47%">
+                        </div>
 
+                    </div>
+                    <div class="progress mt-2" style="height: auto;">
+                        <a class="btn btn-dark" href="https://www.mysql.com/" target="blank">
+                            <img src="./img/iconfinder_mysql_1322469.svg" alt="MySQL"
+                                class="img-fluid max-width: 100%; height: auto">
+                        </a>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 81%">
                         </div>
-                        <div class="progress mt-2" style="height: auto;">
-                            <a class="btn btn-dark" href="https://www.mysql.com/" target="blank">
-                                <img src="./img/iconfinder_mysql_1322469.svg" alt="MySQL"
-                                    class="img-fluid max-width: 100%; height: auto">
-                            </a>
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 81%">
-                            </div>
 
+                    </div>
+                    <div class="progress mt-2" style="height: auto;">
+                        <a class="btn btn-dark" href="https://dotnet.microsoft.com/apps/aspnet/web-apps" target="blank">
+                            <img src="./img/iconfinder_ASP.Net_682703.svg" alt="DotNet"
+                                class="img-fluid max-width: 100%; height: auto">
+                        </a>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
                         </div>
-                        <div class="progress mt-2" style="height: auto;">
-                            <a class="btn btn-dark" href="https://dotnet.microsoft.com/apps/aspnet/web-apps"
-                                target="blank">
-                                <img src="./img/iconfinder_ASP.Net_682703.svg" alt="DotNet"
-                                    class="img-fluid max-width: 100%; height: auto">
-                            </a>
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
-                                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 45%">
-                            </div>
 
+                    </div>
+                    <div class="progress mt-2" style="height: auto;">
+                        <a class="btn btn-dark" href="https://dotnet.microsoft.com/apps/aspnet/web-apps" target="blank">
+                            <img src="./img/iconfinder_api-code-window_532742.svg" alt="API"
+                                class="img-fluid max-width: 100%; height: auto">
+                        </a>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 51%">
                         </div>
-                        <div class="progress mt-2" style="height: auto;">
-                            <a class="btn btn-dark" href="https://dotnet.microsoft.com/apps/aspnet/web-apps"
-                                target="blank">
-                                <img src="./img/iconfinder_api-code-window_532742.svg" alt="API"
-                                    class="img-fluid max-width: 100%; height: auto">
-                            </a>
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
-                                role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 51%">
-                            </div>
 
-                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="jumbotron" id="experience">
+    <div class="card mt-auto bg-light">
+        <div class="content mt-2 bg-dark">
+            <h1 class="text-center text-light font-italic">Experiencia</h1>
+            <hr>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <legend class="text-center"><b>App MEAN</b></legend>
+                    <img src="./img/mean-stack.png" class="img-fluid max-width: 100%; height: auto" alt="MEAN">
+                </div>
+                <div class="col">
+                    <legend class="text-center"><b>Automation</b></legend>
+                    <img src="./img/WebDrivers.png" class="img-fluid max-width: 100%; height: auto" alt="Automation">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <legend class="text-center"><b>App NET</b></legend>
+                    <img src="./img/NetCore.png" class="img-fluid max-width: 100%; height: auto" alt="MEAN">
+                </div>
+                <div class="col">
+                    <legend class="text-center"><b>DevOps</b></legend>
+                    <img src="./img/DevOps.png" class="img-fluid max-width: 100%; height: auto" alt="MEAN">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="jumbotron" id="service">
+    <div class="content mt-2 bg-dark">
+        <h1 class="text-center text-light font-italic">Servicios</h1>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <img src="./img/iconfinder_app_frontend_end_front_front-end_front_end_development_4047379.svg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Servicios frontend</h5>
+                    <p class="card-text text-center">El front-end es todo lo que implica
+                        el usuario ve, incluido el diseño y algunos lenguajes como HTML y CSS.
+                        Hay muchos trabajos diferentes asociados con el front-end.
+                        Ten en cuenta que muchos de estos títulos son subjetivos,
+                        así que si bien el desarrollador front-end puede significar algo en una empresa,
+                        Puede significar algo completamente diferente en otra empresa.</p>
+                    <a href="#" class="btn btn-primary"><i class="fas fa-mail-bulk"></i> Contactame</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/iconfinder_object_programming_development_oriented_developer_object-oriented_programming_software_4047394.svg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Servicios backend</h5>
+                    <p class="card-text text-center">
+                        El back-end, o el "lado del servidor", es básicamente cómo funciona el sitio,
+                        actualizaciones y cambios. Esto se refiere a todo lo que el usuario no puede
+                        ver en el navegador, como bases de datos y servidores. Por lo general, las personas
+                        que trabajan en el back-end se llaman back-end
+                        programadores o desarrolladores de back-end. Los desarrolladores de back-end
+                        están más preocupados por las cosas
+                        como seguridad, estructura y gestión de contenido.</p>
+                    <a href="#" class="btn btn-primary"><i class="fas fa-mail-bulk"></i> Contactame</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./img/iconfinder_Programming_Development_Api_1743800.svg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Servicios APIS</h5>
+                    <p class="card-text text-center">API es el acrónimo de Application Programming Interface,
+                        que es un intermediario de software que permite que dos aplicaciones se comuniquen entre sí.
+                        Cada vez que use una aplicación como Facebook, envíe un mensaje instantáneo,
+                        o verifique el clima en su teléfono, está utilizando una API.</p>
+                    <a href="#" class="btn btn-primary"><i class="fas fa-mail-bulk"></i> Contactame</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="jumbotron" id="contactme">
+    <div class="content mt-2 bg-dark">
+        <h1 class="text-center text-light font-italic">Contactame</h1>
+        <hr>
+    </div>
+    <form action="/contact-es" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4"><b>Nombre</b></label>
+                <input type="text" class="form-control" id="inputNameEs" name="inputNameEs" placeholder="Name">
+            </div>
+            <div class="alert alert-danger" role="alert">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4"><b>Email</b></label>
+                <input type="email" class="form-control" id="inputEmailEs" name="inputEmailEs"
+                    placeholder="Enter email">
+            </div>
+            <div class="alert alert-danger" role="alert">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress"><b>Asunto</b></label>
+            <input type="text" class="form-control" id="inputSubjectEs" name="inputSubjectEs" placeholder="Add Subject">
+        </div>
+        <div class="alert alert-danger" role="alert">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress"><b>Comentarios</b></label>
+            <textarea class="form-control" id="areaMessageEs" name="areaMessageEs" rows="3" placeholder="Texto aquí...">
+            </textarea>
+        </div>
+        <div class="alert alert-danger" role="alert">
+        </div>
+        <input type="submit" class="btn btn-primary send" placeholder="Enviar">
+    </form>
+</div>
+</div>
+<script src="../public/js/menu_spanish.js"></script>
