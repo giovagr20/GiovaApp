@@ -1,17 +1,29 @@
-/*const _dataSend = {};
+const _dataSend = {};
 const nodeMailer = require('nodemailer');
 _dataSend.sendNewEmail = async(name, email, subject, message)=>{
-    
-let testAccount = await nodeMailer.createTestAccount();
-let transporter = nodeMailer.createTransport({
-    service: 'yopmail',
+  
+const user = `devgiovagr20@gmail.com`;
+const pass = `gio.17lina2019`;
+
+let transporter = await nodeMailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
     auth: {
-      user: 'giova@gmail.com', // generated ethereal user
-    }
-  });
+      user: user,
+      pass: pass // generated ethereal user
+    }});
+
+    transporter.verify(function(error,success) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Server is ready to take our messages");
+      }
+    });
 
   let _dataSend = await transporter.sendMail({
-    from: '<giova@yopmail.com>', // sender address
+    from: user, // sender address
     to: "giovannyg32@gmail.com", // list of receivers
     subject: `${subject}`, // Subject line
     html: `
@@ -25,4 +37,4 @@ let transporter = nodeMailer.createTransport({
 
 _dataSend.sendNewEmail().catch(console.error);
 
-module.exports = _dataSend;*/
+module.exports = _dataSend;
