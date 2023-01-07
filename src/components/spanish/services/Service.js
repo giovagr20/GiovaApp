@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-export const Projects = () => {
+export const Servicios = () => {
   return (
     <>
       <hr />
@@ -11,7 +11,7 @@ export const Projects = () => {
           {" "}
           <code>
             {" "}
-            <strong className="text-uppercase">Projects</strong>{" "}
+            <strong className="text-uppercase">Servicios</strong>{" "}
           </code>
         </h2>
       </div>
