@@ -1,18 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import logo from "../../assets/img/logo.svg"
+import logo from "../../assets/img/logo.svg";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary bg-primary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary bg-primary fixed-top">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
-            <img src={logo} alt="LogoGiovaApp" width="60" height="60"/>
+            <img src={logo} alt="LogoGiovaApp" width="50" height="50" />
           </Link>
           <Link to="/" className="navbar-brand">
-            <em> GiovaApp </em>
+            <em> &#8497; &#8483;</em>
           </Link>
           <button
             className="navbar-toggler"
@@ -39,10 +39,14 @@ export const Header = () => {
                 </a>
                 <ul className="dropdown-menu ml-6">
                   <li>
-                    <Link className="dropdown-item" to="/spanish">Spanish</Link>
+                    <Link className="dropdown-item" to="/spanish">
+                      <i className="bi bi-flag"></i> Spanish
+                    </Link>
                   </li>
                   <li>
-                  <Link className="dropdown-item" to="/english">English</Link>
+                    <Link className="dropdown-item" to="/english">
+                      <i className="bi bi-flag-fill"></i> English
+                    </Link>
                   </li>
                 </ul>
               </li>
