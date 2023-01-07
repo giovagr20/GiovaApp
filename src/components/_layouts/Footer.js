@@ -14,7 +14,7 @@ export const Footer = () => {
             {" "}
             Made by: {" "}
             <strong>
-              <em> Giovanni Gomez Restrepo &#x2127;&#x2663;</em>
+              <em><code>Giovanni Gomez Restrepo &#x2663;</code></em>
             </strong>
           </p>
         </div>
