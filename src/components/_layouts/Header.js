@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import logo from "../../assets/img/logo.svg";
+import cv from "../../assets/pdf/Curriculum Giovanni.pdf";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -27,6 +28,12 @@ export const Header = () => {
           </button>
           <div className="collapse navbar-collapse ml-6" id="navbarNavDropdown">
             <ul className="navbar-nav">
+              <li className="nav-item">
+                <a href={cv} download="Curriculum.pdf" className="btn btn-dark">
+                  {" "}
+                  Download CV{" "}
+                </a>
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"

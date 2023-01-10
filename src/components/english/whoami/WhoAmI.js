@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import profile from "../../../assets/img/GiovanniImg.jpg";
+import cv from "../../../assets/pdf/Curriculum Giovanni.pdf";
+
 
 export const WhoAmI = () => {
   return (
@@ -61,6 +63,12 @@ export const WhoAmI = () => {
               <strong>Email:</strong> giovannyg32@gmail.com
             </ol>
           </ul>
+        </div>
+        <br />
+        <div className="clearfix">
+          <a href={cv} download="Curriculum.pdf" className="btn btn-primary">
+            Download Curriculum
+          </a>
         </div>
         <br />
         <div>
