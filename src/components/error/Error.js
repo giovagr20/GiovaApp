@@ -16,8 +16,11 @@ export const ErrorNotFound = () => {
               <img
                 src={error}
                 className="img-fluid rounded"
-                width="500"
-                height="500"
+                alt="Error"
+                style={{
+                  width: 500,
+                  height: 500
+                }}
               />
             </Link>
           </div>

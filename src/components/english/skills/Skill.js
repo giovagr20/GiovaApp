@@ -8,6 +8,7 @@ import java from "../../../assets/img/java.png";
 import node from "../../../assets/img/nodejs.png";
 import angular from "../../../assets/img/angular.png";
 import api from "../../../assets/img/api.png";
+import { Languages } from "../../utils/utils.language";
 import { useEffect, useState } from "react";
 
 export const Skills = () => {
@@ -42,6 +43,8 @@ export const Skills = () => {
         return `Around 2 years of experience, tools: Sequelize, API Rest, CI/CD, using Clean Architecture`;
       case "API":
         return `Around 6 years, API Rest and SOAP, protocols HTTP and encrypt information, authetication and security`;
+      default:
+        return `You've not chosen any option`
     }
   };
 
@@ -66,7 +69,7 @@ export const Skills = () => {
           <div className="row">
             <div className="col-2">
               <button
-                onClick={() => setType("NetCore")}
+                onClick={() => setType(Languages.netcore)}
                 className="btn form-control"
                 id="netCore"
               >
@@ -75,7 +78,7 @@ export const Skills = () => {
             </div>
             <div className="col-2">
               <button
-                onClick={() => setType("React")}
+                onClick={() => setType(Languages.react)}
                 className="btn form-control"
                 id="react"
               >
@@ -84,7 +87,7 @@ export const Skills = () => {
             </div>
             <div className="col-2">
               <button
-                onClick={() => setType("Java")}
+                onClick={() => setType(Languages.java)}
                 className="btn form-control"
                 id="java"
               >
@@ -93,7 +96,7 @@ export const Skills = () => {
             </div>
             <div className="col-2">
               <button
-                onClick={() => setType("Node")}
+                onClick={() => setType(Languages.node)}
                 className="btn form-control"
                 id="node"
               >
@@ -102,7 +105,7 @@ export const Skills = () => {
             </div>
             <div className="col-2">
               <button
-                onClick={() => setType("Angular")}
+                onClick={() => setType(Languages.angular)}
                 className="btn form-control"
                 id="angular"
               >
@@ -111,7 +114,7 @@ export const Skills = () => {
             </div>
             <div className="col-2">
               <button
-                onClick={() => setType("API")}
+                onClick={() => setType(Languages.api)}
                 className="btn form-control"
                 id="api"
               >
