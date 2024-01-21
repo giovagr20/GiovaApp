@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <div className="navbar bg-base-100 w-full bg-accent">
+    <div className="navbar bg-base-100 w-full bg-neutral">
       <div className="flex-1">
         <div className="avatar">
           <Link to="/" className="btn btn-ghost">

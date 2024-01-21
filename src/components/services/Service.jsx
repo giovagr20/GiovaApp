@@ -38,68 +38,67 @@ export const Services = ({ idiom }) => {
       <>
         <div className="mt-2">
           <h3 className="text-secondary text-center">
-            <code>SERVICES </code>
+            <code>SERVICIOS </code>
           </h3>
         </div>
-        <div className="grid grid-cols-3 gap-3">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={frontend} alt="frontEnd" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>FrontEnd</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                Front-end is todo lo involucrado con lo que el usuario ve,
-                incluido el diseño y algunos lenguajes de programacion y
-                etiquetas tales como HTML, CSS y Javascript. Hay diferentes
-                trabajos asociados con frontend. Tener en cuenta que los cargos
-                son subjetivos, puede que se interprete diferente basado en la
-                compañia que te contrata.
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={backend} alt="backEnd" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>Backend</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                Backend es basicamente todo lo involucrado con el lado del
-                servidor lo que el usuario no ve. Esto involucra las base de
-                datos, la lógica de negocio, servidores y lenguajes tales como
-                java, .net o más. El desarrollador backend se enfoca y preocupa
-                más por la seguridad, estructura y el control de la aplicación.
-              </div>
-            </div>
-          </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <div className="avatar">
-              <div className="rounded-full">
-                <img src={fullstack} alt="fullStack" />
-              </div>
-            </div>
+        <div className="carousel carousel-center rounded-box">
+          <div className="carousel-item">
+            <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
 
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>Fullstack</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                Fullstack refiere a conocimientos entre backend y frontend, este
-                indica que puede trabajar en "ambos lados". Es capaz de
-                desarrollar contenido web y del lado del cliente, como del lado
-                del servidor. El fullstack developer involucra en un "todo" la
-                aplicacion desde la seguridad hacia el etiquetado, con
-                conocimientos en arquitecturas de software.
+              <div className="swap-off">
+                <img src={frontend} className="rounded-box" />
               </div>
-            </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Front-End Servicios <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Toda tarea para el lado de frontend <br />
+                  incluido <code> JS/HTML/CSS </code>  
+                  </p>
+
+                </p>
+              </div>
+            </label>
+          </div>
+          <div className="carousel-item">
+          <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
+
+              <div className="swap-off">
+                <img src={backend} className="rounded-box" />
+              </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Backend Servicios <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Toda tarea para el lado de backend <br />
+                  incluido <code> Java, NetCore o NodeJS </code>  
+                  </p>
+
+                </p>
+              </div>
+            </label>
+          </div>
+          <div className="carousel-item">
+          <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
+
+              <div className="swap-off">
+                <img src={fullstack} className="rounded-box" />
+              </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Fullstack Servicios <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Toda tarea para el lado de fullstack <br />
+                  incluido <code> Java, NetCore o NodeJS </code> y
+                  <code>HTML, CSS, Javascript</code>
+                  </p>
+
+                </p>
+              </div>
+            </label>
           </div>
         </div>
 
@@ -132,65 +131,64 @@ export const Services = ({ idiom }) => {
             <code>SERVICES </code>
           </h3>
         </div>
-        <div className="grid grid-cols-3 gap-3">
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={frontend} alt="frontEnd" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>FrontEnd</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                The front-end is everything involved with what the user sees,
-                including design and some languages like HTML and CSS. There are
-                a lot of different jobs associated with the front-end. Keep in
-                mind that a lot of these titles are subjective, so while
-                front-end developer may mean something at one company, it can
-                mean something completely different at another company.
+        <div className="carousel carousel-center rounded-box">
+          <div className="carousel-item">
+            <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
+
+              <div className="swap-off">
+                <img src={frontend} className="rounded-box" />
               </div>
-            </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Front-End Services <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Frontend features to create new webpages and new features <br />
+                  included <code> JS/HTML/CSS </code>  
+                  </p>
+
+                </p>
+              </div>
+            </label>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={backend} alt="backEnd" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>Backend</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                The back-end, or the "server-side", is basically how the site
-                works, updates, and changes. This refers to everything the user
-                can't see in the browser, like databases and servers. Usually
-                people who work on the back-end are called back-end programmers
-                or back-end developers. back-end Developers are mostly worried
-                about things like security, structure, and content management.
+          <div className="carousel-item">
+          <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
+
+              <div className="swap-off">
+                <img src={backend} className="rounded-box" />
               </div>
-            </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Backend Services <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Backend services to resolve new features, bugs <br />
+                  included <code> Java, NetCore o NodeJS </code>  
+                  </p>
+
+                </p>
+              </div>
+            </label>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure>
-              <img src={fullstack} alt="fullStack" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-secondary text-center">
-                {" "}
-                <code>Fullstack</code>{" "}
-              </h2>
-              <div className="card-actions justify-end">
-                Full stack technology refers to the entire depth of a computer
-                system application, and full stack developers straddle two
-                separate web development domains: the front end and the back
-                end. The front end includes everything that a client, or site
-                viewer, can see and interact with. By contrast, the back end
-                refers to all the servers, databases, and other internal
-                architecture that drives the application; usually, the end-user
-                never interacts with this realm directly.{" "}
+          <div className="carousel-item">
+          <label className="swap swap-flip text-9xl">
+              <input type="checkbox" />
+
+              <div className="swap-off">
+                <img src={fullstack} className="rounded-box" />
               </div>
-            </div>
+              <div className="swap-on">
+                <p className="label-text text-center text-secondary justify-items-center">
+                  Fullstack Services <br /> <br />
+                  <p className="label-text text-center justify-items-center">
+                  Fullstack services to create, develop new features and resolve bugs <br />
+                  included <code> Java, NetCore o NodeJS </code> and
+                  <code>HTML, CSS, Javascript</code>
+                  </p>
+
+                </p>
+              </div>
+            </label>
           </div>
         </div>
         <div className="grid grid-rows-1 text-center mt-3">
@@ -216,8 +214,6 @@ export const Services = ({ idiom }) => {
   };
 
   return <>{idiom === ENGLISH ? viewEnglish() : viewSpanish()}</>;
-
-  // return (
   //   <>
   //     {idiom === "english" ? (
   //       <>
