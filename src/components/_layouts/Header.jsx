@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <div className="navbar bg-base-100 w-full bg-neutral">
+    <>
+        <div className="fixed top-0 left-0 right-0 z-50 navbar bg-base-100 w-full bg-neutral">
       <div className="flex-1">
         <div className="avatar">
           <Link to="/" className="btn btn-ghost">
@@ -56,5 +57,11 @@ export const Header = () => {
         </div>
       </div>
     </div>
+    <div className="pb-8"/>
+    <div className="pb-8"/>
+    <div className="pb-8"/>
+
+    </>
+
   );
 };
