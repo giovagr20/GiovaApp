@@ -3,10 +3,18 @@ import nequi from "../../assets/img/Nequi.png";
 import portfolio from "../../assets/img/Portfolio.png";
 import { Link } from "react-router-dom";
 
+const ENGLISH = "english";
+
 export const Projects = ({ idiom }) => {
-  return (
-    <div>Here projects</div>
-  )
+  const viewEnglish = () => {
+    return <div>Hi I'm English</div>;
+  };
+
+  const viewSpanish = () => {
+    return <div>Hola, soy Español</div>;
+  };
+
+  return <>{idiom === ENGLISH ? viewEnglish() : viewSpanish()}</>;
   // return (
   //   <>
   //     {idiom === "english" ? (

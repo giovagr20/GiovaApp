@@ -4,10 +4,13 @@ import fullstack from "../../assets/img/fullstack.png";
 import Swal from "sweetalert2";
 import { useState } from "react";
 
+const ENGLISH = "english";
+const SPANISH = "spanish";
+
 export const Services = ({ idiom }) => {
   const [lang, setLang] = useState(idiom);
   const contactMe = () => {
-    if (lang === 'spanish') {
+    if (lang === "spanish") {
       Swal.fire({
         icon: "info",
         title: `Contactame!`,
@@ -30,9 +33,189 @@ export const Services = ({ idiom }) => {
     }
   };
 
-  return (
-    <div>Here Services</div>
-  )
+  const viewSpanish = () => {
+    return (
+      <>
+        <div className="mt-2">
+          <h3 className="text-secondary text-center">
+            <code>SERVICES </code>
+          </h3>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src={frontend} alt="frontEnd" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>FrontEnd</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                Front-end is todo lo involucrado con lo que el usuario ve,
+                incluido el diseño y algunos lenguajes de programacion y
+                etiquetas tales como HTML, CSS y Javascript. Hay diferentes
+                trabajos asociados con frontend. Tener en cuenta que los cargos
+                son subjetivos, puede que se interprete diferente basado en la
+                compañia que te contrata.
+              </div>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src={backend} alt="backEnd" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>Backend</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                Backend es basicamente todo lo involucrado con el lado del
+                servidor lo que el usuario no ve. Esto involucra las base de
+                datos, la lógica de negocio, servidores y lenguajes tales como
+                java, .net o más. El desarrollador backend se enfoca y preocupa
+                más por la seguridad, estructura y el control de la aplicación.
+              </div>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="avatar">
+              <div className="rounded-full">
+                <img src={fullstack} alt="fullStack" />
+              </div>
+            </div>
+
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>Fullstack</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                Fullstack refiere a conocimientos entre backend y frontend, este
+                indica que puede trabajar en "ambos lados". Es capaz de
+                desarrollar contenido web y del lado del cliente, como del lado
+                del servidor. El fullstack developer involucra en un "todo" la
+                aplicacion desde la seguridad hacia el etiquetado, con
+                conocimientos en arquitecturas de software.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-rows-1 text-center mt-3">
+          <h3 className="text-secondary text-center">
+            <strong>
+              <code> Estas interesado? </code>
+            </strong>
+          </h3>
+          <a
+            className="btn btn-accent"
+            onClick={() => {
+              setLang(SPANISH);
+              contactMe();
+            }}
+          >
+            <code> Contactame </code>
+          </a>
+        </div>
+        <div className="divider"></div>
+      </>
+    );
+  };
+
+  const viewEnglish = () => {
+    return (
+      <>
+        <div className="mt-2">
+          <h3 className="text-secondary text-center">
+            <code>SERVICES </code>
+          </h3>
+        </div>
+        <div className="grid grid-cols-3 gap-3">
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src={frontend} alt="frontEnd" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>FrontEnd</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                The front-end is everything involved with what the user sees,
+                including design and some languages like HTML and CSS. There are
+                a lot of different jobs associated with the front-end. Keep in
+                mind that a lot of these titles are subjective, so while
+                front-end developer may mean something at one company, it can
+                mean something completely different at another company.
+              </div>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src={backend} alt="backEnd" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>Backend</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                The back-end, or the "server-side", is basically how the site
+                works, updates, and changes. This refers to everything the user
+                can't see in the browser, like databases and servers. Usually
+                people who work on the back-end are called back-end programmers
+                or back-end developers. back-end Developers are mostly worried
+                about things like security, structure, and content management.
+              </div>
+            </div>
+          </div>
+          <div className="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src={fullstack} alt="fullStack" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-secondary text-center">
+                {" "}
+                <code>Fullstack</code>{" "}
+              </h2>
+              <div className="card-actions justify-end">
+                Full stack technology refers to the entire depth of a computer
+                system application, and full stack developers straddle two
+                separate web development domains: the front end and the back
+                end. The front end includes everything that a client, or site
+                viewer, can see and interact with. By contrast, the back end
+                refers to all the servers, databases, and other internal
+                architecture that drives the application; usually, the end-user
+                never interacts with this realm directly.{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-rows-1 text-center mt-3">
+          <h3 className="text-secondary text-center">
+            <strong>
+              <code> Are you interested in? </code>
+            </strong>
+          </h3>
+          <a
+            className="btn btn-accent"
+            onClick={() => {
+              setLang(ENGLISH);
+              contactMe();
+            }}
+          >
+            <code> Contact Me </code>
+          </a>
+        </div>
+
+        <div className="divider"></div>
+      </>
+    );
+  };
+
+  return <>{idiom === ENGLISH ? viewEnglish() : viewSpanish()}</>;
 
   // return (
   //   <>
@@ -60,13 +243,7 @@ export const Services = ({ idiom }) => {
   //                 <div className="card-body">
   //                   <h5 className="card-title text-center">Service frontend</h5>
   //                   <p className="card-text text-center">
-  //                     The front-end is everything involved with what the user
-  //                     sees, including design and some languages like HTML and
-  //                     CSS. There are a lot of different jobs associated with the
-  //                     front-end. Keep in mind that a lot of these titles are
-  //                     subjective, so while front-end developer may mean
-  //                     something at one company, it can mean something completely
-  //                     different at another company.{" "}
+
   //                   </p>
   //                 </div>
   //               </div>
@@ -81,13 +258,7 @@ export const Services = ({ idiom }) => {
   //                 <div className="card-body">
   //                   <h5 className="card-title text-center">Service backend</h5>
   //                   <p className="card-text text-center">
-  //                     The back-end, or the "server-side", is basically how the
-  //                     site works, updates, and changes. This refers to
-  //                     everything the user can't see in the browser, like
-  //                     databases and servers. Usually people who work on the
-  //                     back-end are called back-end programmers or back-end
-  //                     developers. back-end Developers are mostly worried about
-  //                     things like security, structure, and content management.{" "}
+  //{" "}
   //                   </p>
   //                 </div>
   //               </div>
@@ -104,26 +275,14 @@ export const Services = ({ idiom }) => {
   //                     Service fullstack
   //                   </h5>
   //                   <p className="card-text text-center">
-  //                     Full stack technology refers to the entire depth of a
-  //                     computer system application, and full stack developers
-  //                     straddle two separate web development domains: the front
-  //                     end and the back end. The front end includes everything
-  //                     that a client, or site viewer, can see and interact with.
-  //                     By contrast, the back end refers to all the servers,
-  //                     databases, and other internal architecture that drives the
-  //                     application; usually, the end-user never interacts with
-  //                     this realm directly.{" "}
+
   //                   </p>
   //                 </div>
   //               </div>
   //             </div>
   //           </div>
   //           <div className="row">
-  //             <h3 className="lead text-center">
-  //               <strong>
-  //                 <code> Are you interested in? </code>
-  //               </strong>
-  //             </h3>
+
   //             <h3 className="text-center">
   //               <a className="btn btn-primary" onClick={() => {
   //                 setLang("english")
@@ -161,13 +320,7 @@ export const Services = ({ idiom }) => {
   //                     Servicios frontend
   //                   </h5>
   //                   <p className="card-text text-center">
-  //                     Front-end is todo lo involucrado con lo que el usuario ve,
-  //                     incluido el diseño y algunos lenguajes de programacion y
-  //                     etiquetas tales como HTML, CSS y Javascript. Hay
-  //                     diferentes trabajos asociados con frontend. Tener en
-  //                     cuenta que los cargos son subjetivos, puede que se
-  //                     interprete diferente basado en la compañia que te
-  //                     contrata.{" "}
+
   //                   </p>
   //                 </div>
   //               </div>
@@ -184,12 +337,7 @@ export const Services = ({ idiom }) => {
   //                     Servicios backend
   //                   </h5>
   //                   <p className="card-text text-center">
-  //                     Backend es basicamente todo lo involucrado con el lado del
-  //                     servidor lo que el usuario no ve. Esto involucra las base
-  //                     de datos, la lógica de negocio, servidores y lenguajes
-  //                     tales como java, .net o más. El desarrollador backend se
-  //                     enfoca y preocupa más por la seguridad, estructura y el
-  //                     control de la aplicación."
+
   //                   </p>
   //                 </div>
   //               </div>
@@ -206,13 +354,7 @@ export const Services = ({ idiom }) => {
   //                     Servicios fullstack
   //                   </h5>
   //                   <p className="card-text text-center">
-  //                     Fullstack refiere a conocimientos entre backend y
-  //                     frontend, este indica que puede trabajar en "ambos lados".
-  //                     Es capaz de desarrollar contenido web y del lado del
-  //                     cliente, como del lado del servidor. El fullstack
-  //                     developer involucra en un "todo" la aplicacion desde la
-  //                     seguridad hacia el etiquetado, con conocimientos en
-  //                     arquitecturas de software.
+
   //                   </p>
   //                 </div>
   //               </div>
@@ -225,11 +367,7 @@ export const Services = ({ idiom }) => {
   //               </strong>
   //             </h3>
   //             <h3 className="text-center">
-  //               <a className="btn btn-primary" onClick={() => {
-  //                 setLang("spanish")
-  //                 contactMe()}}>
-  //                 <code> Contactame </code>
-  //               </a>
+
   //             </h3>
   //           </div>
   //         </div>
