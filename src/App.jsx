@@ -7,8 +7,7 @@ import { ErrorNotFound } from "./components/error/Error";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<English />} />
@@ -18,7 +17,6 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
   );
 }
 

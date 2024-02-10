@@ -214,7 +214,6 @@ export const Services = ({ idiom }) => {
   };
 
   return <>{idiom === ENGLISH ? viewEnglish() : viewSpanish()}</>;
-  //   <>
   //     {idiom === "english" ? (
   //       <>
   //         <hr />

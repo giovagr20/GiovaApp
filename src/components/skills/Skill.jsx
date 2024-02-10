@@ -301,8 +301,6 @@ export const Skills = ({ idiom }) => {
 
   return <>{idiom === ENGLISH ? viewEnglish() : viewSpanish()} </>;
 };
-
-//    (
 //     <>
 //       {idiom === "english" ? (
 //         <>
